@@ -5,7 +5,7 @@ import './Receta.css'
 export function Receta() {
   const navigate = useNavigate();
   const navigateHome = () =>{
-    navigate('/')
+    navigate('/componente-recetas/')
   }
   return (
     <>

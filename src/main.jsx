@@ -8,6 +8,7 @@ import {Receta} from './Receta'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Title/>
+    <App/>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App/>}/>

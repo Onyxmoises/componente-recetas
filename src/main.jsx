@@ -1,19 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {App, Title} from './Recetas'
-import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import {Receta} from './Receta'
+import {Recetas} from './components/Recetas'
+// import {Menu} from './components/Menu'
+// import {Busqueda} from './components/Busqueda'
+// import {Contacto} from './components/Contacto'
+import './styles/index.module.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Title/>
-    {/* <App/> */}
-    <BrowserRouter>
-      <Routes>
-        <Route path='/componente-recetas/' element={<App/>}/>
-        <Route path='/componente-recetas/Receta' element={<Receta/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Recetas />
   </React.StrictMode>
 )
